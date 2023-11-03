@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIVEROS | Unidad 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <img class="logo" src="./imgs/logo.jpg" alt="Logo SNPC Seguros">
+        <nav>
+            <a class="item" href="#header">Inicio</a>
+            <a class="item" href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="contenedor">
+            <h2>Viví con la seguridad que te mereces.</h2>
+            <h1>Seguro no pagamos cooperativa</h1>
+            <p>Consulta nuestros planes y deja que las preocupaciones las llevemos nosotros.</p>
+            <button><a href="#contacto">Solicitar Cotización</a></button>
+        </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Contacta con nosotros</h2>
+
+        <form id="contratarSeguro" enctype="multipart/form-data">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required>
+            <label for="dni">DNI</label>
+            <input type="number" name="dni" id="dni" required>
+            <label for="dni">Teléfono</label>
+            <input type="number" name="telefono" id="telefono" required>
+            <label for="tipoSeguro">Tipo de Seguro</label>
+            <select name="tipoSeguro" id="tipoSeguro">
+                <option value="">Seleccione una opción</option>
+                <option value="basico">Básico</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="premium">Premium</option>
+            </select>
+            <h3>Costo del plan: <span id="mostrarPrecio">-</span> </h3>
+            <button id="enviar" type="button">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <img class="logo" src="./imgs/logo.jpg" alt="Logo SNPC Seguros">
+        <nav>
+            <a class="item" href="#header">Inicio</a>
+            <a class="item" href="#contacto">Contacto</a>
+        </nav>
+
+    </footer>
+
+
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

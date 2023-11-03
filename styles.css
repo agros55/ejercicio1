@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* COLORES */
+    --items-nav: #c9c9c9;
+    --items-nav-active: #fff;
+    --header-bg: #0070c0;
+    --bg-color: #dfe2fa;
+    --bg-transp: rgb(0, 0, 0, .8);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: var(--header-bg);
+}
+
+.logo {
+    height: 80px;
+}
+
+nav {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--items-nav);
+    transition: all .3s ease;
+}
+
+.item {
+    margin: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--items-nav);
+    transition: all .3s ease;
+}
+
+.item:hover {
+    color: var(--items-nav-active);
+    transform: scale(1.3);
+}
+
+.hero {
+    background-color: #0070c0;
+    background: url("./imgs/hero.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.contenedor {
+    width: 40%;
+    height: 80%;
+    background-color: var(--bg-transp);
+    padding-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+h1,
+h2 {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+.contenedor h1 {
+    color: var(--items-nav-active);
+    margin-bottom: 30px;
+}
+
+.contenedor h2 {
+    color: var(--items-nav);
+}
+
+.contenedor p {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--items-nav);
+}
+
+.contenedor button {
+    font-size: 18px;
+    color: var(--items-nav);
+    padding: 10px;
+    background-color: var(--header-bg);
+    margin-top: 30px;
+    width: 25%;
+    border: none;
+    transition: all .5s ease;
+}
+
+.contenedor button:hover {
+    transform: scale(1.3);
+    color: var(--items-nav-active);
+}
+
+.contenedor button:hover a {
+    color: var(--items-nav-active);
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 75vh;
+    padding-bottom: 10vh;
+}
+
+.contacto h2 {
+    margin: 20px 0;
+}
+
+.contacto button {
+    margin-top: 30px;
+    padding: 5px;
+    background-color: #7ec9ff;
+    border: none;
+    color: var(--header-bg);
+    font-size: 20px;
+    font-weight: bolder;
+    width: 25%;
+    transition: all .5s ease;
+}
+
+.contacto button:hover {
+    transform: scale(1.2);
+}
+
+.contacto h3 {
+    color: var(--items-nav-active);
+    margin-top: 15px;
+}
+
+#contratarSeguro {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--header-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 20px;
+}
+
+label {
+    color: var(--items-nav-active);
+}
+
+input {
+    font-size: 16px;
+    margin: 5px 0 15px;
+    width: 90%;
+}
+
+input:focus {
+    font-weight: 600;
+    padding: 5px;
+}
+
+.requerido {
+    border: solid 2px red;
+}
+
+select {
+    width: 80%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 16vh;
+    background-color: var(--header-bg);
+}
